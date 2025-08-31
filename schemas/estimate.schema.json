@@ -1,0 +1,26 @@
+cat > schemas/estimate.schema.json <<'JSON'
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Estimate",
+  "type": "object",
+  "properties": {
+    "明細": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "項目": { "type": "string" },
+          "数量": { "type": "number" },
+          "単価": { "type": "number" },
+          "金額": { "type": "number" }
+        },
+        "required": ["項目", "金額"]
+      }
+    },
+    "小計": { "type": "number" },
+    "消費税": { "type": "number" },
+    "合計": { "type": "number" }
+  },
+  "required": ["明細", "合計"]
+}
+JSON

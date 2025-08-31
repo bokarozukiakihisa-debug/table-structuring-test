@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Runs & logs
+runs/
+logs/
+
+# Editors
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db

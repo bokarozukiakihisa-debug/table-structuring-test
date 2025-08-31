@@ -1,0 +1,12 @@
+{
+  "name": "estim-json-lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {},
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "settings": { "python.defaultInterpreterPath": "/usr/local/bin/python" },
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    }
+  }
+}
